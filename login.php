@@ -32,22 +32,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <title>Login — Painel de Certificados Previne</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow">
-<style>
-  body{font-family:Inter,Arial,sans-serif;background:linear-gradient(135deg,#1a232e,#24313E 45%,#7a0f22);display:flex;align-items:center;justify-content:center;min-height:100vh;margin:0;}
-  .box{background:#fff;padding:36px;border-radius:16px;box-shadow:0 8px 40px rgba(0,0,0,.3);max-width:380px;width:90%;}
-  h1{font-size:1.3rem;color:#24313E;margin-bottom:4px;}
-  p{color:#6b7a8a;font-size:.85rem;margin-bottom:22px;}
-  label{display:block;font-size:.85rem;font-weight:600;color:#24313E;margin-bottom:6px;}
-  input{width:100%;padding:10px 12px;border:1px solid #ddd;border-radius:8px;margin-bottom:16px;font-size:.95rem;box-sizing:border-box;}
-  button{width:100%;background:#C8102E;color:#fff;border:none;padding:12px;border-radius:8px;font-weight:700;cursor:pointer;font-size:.95rem;}
-  button:hover{background:#9c0c24;}
-  .erro{background:#fdecec;color:#9c0c24;padding:10px 14px;border-radius:8px;margin-bottom:16px;font-size:.85rem;}
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilo.css">
 </head>
-<body>
+<body class="centro">
 <div class="box">
-  <h1>Painel de Certificados</h1>
-  <p>Previne — Saúde & Serviços</p>
+  <div class="logo">Previne</div>
+  <h1>Entrar</h1>
+  <p>Painel de gestão — Certificados, alunos, estoque e tarefas.</p>
   <?php if ($erro): ?><div class="erro"><?= htmlspecialchars($erro) ?></div><?php endif; ?>
   <form method="post">
       <?= csrfCampo() ?>

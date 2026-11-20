@@ -54,7 +54,6 @@ $lista = $pdo->query("SELECT * FROM estoque ORDER BY item ASC")->fetchAll(PDO::F
 <title>Estoque — Previne</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow">
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 <?php include 'nav.php'; ?>
@@ -103,7 +102,7 @@ $lista = $pdo->query("SELECT * FROM estoque ORDER BY item ASC")->fetchAll(PDO::F
         </td>
       </tr>
       <?php endforeach; ?>
-      <?php if (!$lista): ?><tr><td colspan="6" style="color:#6b7a8a;">Nenhum item no estoque.</td></tr><?php endif; ?>
+      <?php if (!$lista): ?><tr><td colspan="6" style="color:#737373;">Nenhum item no estoque.</td></tr><?php endif; ?>
     </table>
   </div>
 

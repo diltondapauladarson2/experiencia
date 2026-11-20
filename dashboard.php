@@ -17,7 +17,6 @@ $totalTarefasPendentes = $pdo->query("SELECT COUNT(*) FROM tarefas WHERE estado 
 <title>Painel — Previne</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow">
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 <?php include 'nav.php'; ?>
@@ -32,7 +31,7 @@ $totalTarefasPendentes = $pdo->query("SELECT COUNT(*) FROM tarefas WHERE estado 
 
   <div class="card">
     <h2>Acesso rápido</h2>
-    <p style="color:#6b7a8a;font-size:.9rem;margin-bottom:16px;">Usa o menu acima para navegar entre Certificados, Alunos/Cursos, Estoque e Tarefas.</p>
+    <p style="color:#737373;font-size:.9rem;margin-bottom:16px;">Usa o menu acima para navegar entre Certificados, Alunos/Cursos, Estoque e Tarefas.</p>
     <a href="admin.php" class="btn" style="margin-right:8px;">+ Novo certificado</a>
     <a href="cursos.php" class="btn btn-secundario" style="margin-right:8px;">+ Novo aluno</a>
     <a href="estoque.php" class="btn btn-secundario" style="margin-right:8px;">+ Item de estoque</a>

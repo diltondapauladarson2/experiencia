@@ -47,12 +47,6 @@ $lista = $pdo->query("SELECT * FROM certificados ORDER BY criado_em DESC")->fetc
 <title>Painel de Certificados — Previne</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow">
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@700;800&display=swap" rel="stylesheet">
-<style>
-  .codigo{font-family:monospace;font-weight:700;color:var(--red);}
-  .qr-preview{display:flex;align-items:center;gap:16px;background:#f4f6f5;padding:14px;border-radius:10px;margin-bottom:16px;}
-  .qr-preview img{width:80px;height:80px;}
-</style>
 </head>
 <body>
 <?php include 'nav.php'; ?>
@@ -67,9 +61,9 @@ $lista = $pdo->query("SELECT * FROM certificados ORDER BY criado_em DESC")->fetc
     <div class="qr-preview">
       <img src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=<?= urlencode(SITE_URL . '/verificar.php?codigo=' . $novoCodigo) ?>" alt="QR Code">
       <div>
-        <div style="font-size:.8rem;color:#6b7a8a;">Código gerado</div>
+        <div style="font-size:.8rem;color:#737373;">Código gerado</div>
         <div class="codigo" style="font-size:1.1rem;"><?= htmlspecialchars($novoCodigo) ?></div>
-        <div style="font-size:.78rem;color:#6b7a8a;margin-top:4px;">Coloca este QR no certificado do aluno (imprime a imagem acima ou usa o link direto).</div>
+        <div style="font-size:.78rem;color:#737373;margin-top:4px;">Coloca este QR no certificado do aluno (imprime a imagem acima ou usa o link direto).</div>
       </div>
     </div>
     <?php endif; ?>
@@ -105,7 +99,7 @@ $lista = $pdo->query("SELECT * FROM certificados ORDER BY criado_em DESC")->fetc
         </td>
       </tr>
       <?php endforeach; ?>
-      <?php if (!$lista): ?><tr><td colspan="5" style="color:#6b7a8a;">Ainda não há certificados.</td></tr><?php endif; ?>
+      <?php if (!$lista): ?><tr><td colspan="5" style="color:#737373;">Ainda não há certificados.</td></tr><?php endif; ?>
     </table>
   </div>
 

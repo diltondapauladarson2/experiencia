@@ -14,6 +14,7 @@ Painel · Certificados (código único + QR) · Alunos/Cursos (filtro por estado
 `verificar.php` é público de propósito (destino do QR).
 
 ## Segurança incluída
+- Visual: design system monocromático (Geist, cartões 24px, botões pílula 18px, vermelho só em acções destrutivas) em `estilo.css`
 - Token CSRF em todos os formulários
 - Apagar/Concluir só por POST
 - Sessão httponly/samesite, regeneração no login, atraso em login falhado

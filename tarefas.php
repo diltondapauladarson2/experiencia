@@ -74,7 +74,6 @@ $rotulosPrioridade = ['baixa' => 'Baixa', 'media' => 'Média', 'alta' => 'Alta']
 <title>Tarefas — Previne</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow">
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 <?php include 'nav.php'; ?>
@@ -140,7 +139,7 @@ $rotulosPrioridade = ['baixa' => 'Baixa', 'media' => 'Média', 'alta' => 'Alta']
         </td>
       </tr>
       <?php endforeach; ?>
-      <?php if (!$lista): ?><tr><td colspan="6" style="color:#6b7a8a;">Nenhuma tarefa encontrada.</td></tr><?php endif; ?>
+      <?php if (!$lista): ?><tr><td colspan="6" style="color:#737373;">Nenhuma tarefa encontrada.</td></tr><?php endif; ?>
     </table>
   </div>
 

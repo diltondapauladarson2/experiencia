@@ -70,7 +70,6 @@ $tags = ['nao_escrito' => 'tag-vermelho', 'escrito' => 'tag-amarelo', 'concluido
 <title>Alunos / Cursos — Previne</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow">
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 <?php include 'nav.php'; ?>
@@ -142,7 +141,7 @@ $tags = ['nao_escrito' => 'tag-vermelho', 'escrito' => 'tag-amarelo', 'concluido
         </td>
       </tr>
       <?php endforeach; ?>
-      <?php if (!$lista): ?><tr><td colspan="7" style="color:#6b7a8a;">Nenhum aluno encontrado.</td></tr><?php endif; ?>
+      <?php if (!$lista): ?><tr><td colspan="7" style="color:#737373;">Nenhum aluno encontrado.</td></tr><?php endif; ?>
     </table>
   </div>
 
